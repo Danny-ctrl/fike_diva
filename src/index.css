@@ -8,10 +8,13 @@ header {
   justify-content: space-between;
   padding: 10px 20px;
   background: #FAE0E3;
+  align-items: center;
 }
 
 .logo {
   height: 40px;
+  cursor: pointer; 
+  max-width: 100px; 
 }
 
 body{
