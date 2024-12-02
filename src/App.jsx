@@ -10,15 +10,14 @@ const App = () => {
   const [loggedUser, setLoggedUser] = useState(null); // { username: 'admin', role: 'adm' }
 
   return (
-    <div>
+    <div className="App">
       <Header />
-      <Carousel />
-
-      {!loggedUser && <LoginModal onLogin={setLoggedUser} />}
-      
-      {loggedUser?.role === 'adm' && <AdminPanel />}
-      {loggedUser?.role === 'vendedor' && <VendorPanel />}
-
+      <main style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+        <Carousel />
+        {!loggedUser && <LoginModal onLogin={setLoggedUser} />}
+        {loggedUser?.role === 'adm' && <AdminPanel />}
+        {loggedUser?.role === 'vendedor' && <VendorPanel />}
+      </main>
       <Footer />
     </div>
   );

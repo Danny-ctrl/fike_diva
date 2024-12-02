@@ -1,8 +1,15 @@
 .App {
-  font-family: Arial, sans-serif;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
-
+main {
+  flex-grow: 1; /* Expande para ocupar o espaço restante */
+  display: flex; /* Torna o contêiner flexível */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  padding: 20px; /* Espaçamento opcional */
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -19,13 +26,23 @@ header {
 
 body{
   background: #242739;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
 }
 
 .carousel {
+  display: flex;
+  justify-content: center; /* Centraliza o carousel horizontalmente */
+  align-items: center; /* Centraliza verticalmente se necessário */
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto; /* Garante alinhamento central horizontal */
+  padding: 20px 0; /* Espaçamento acima e abaixo */
+  flex-grow: 1; /* Permite que o carousel ocupe o espaço restante */
 }
+
 
 .carousel img {
   width: 100%;
@@ -39,9 +56,17 @@ footer {
   justify-content: center;
   gap: 20px;
   padding: 20px;
+ align-items: center;
+ margin-top: auto;
+  background-color: #fae0e3;
 }
 
 footer a {
   text-decoration: none;
   color: #555;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Permite que o conteúdo ocupe o espaço restante */
 }
