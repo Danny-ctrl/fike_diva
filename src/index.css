@@ -4,24 +4,30 @@
   flex-grow: 1;
 }
 main {
-  flex-grow: 1; /* Expande para ocupar o espaço restante */
-  display: flex; /* Torna o contêiner flexível */
-  justify-content: center; /* Centraliza o conteúdo verticalmente */
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
-  padding: 20px; /* Espaçamento opcional */
+  flex-grow: 1; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px; 
+  margin: 20px 0;
 }
+
+
 header {
+  width: 100%;
+  height: 70%;
   display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
   background: #FAE0E3;
   align-items: center;
+  border-bottom: 1px solid #ddd;
 }
 
 .logo {
-  height: 40px;
+  width: 100px;
+  height: 80%;;
   cursor: pointer; 
-  max-width: 100px; 
+  max-width: 120px; 
+  display: block;
 }
 
 body{
@@ -30,26 +36,22 @@ body{
   flex-direction: column;
   min-height: 100vh; 
   margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  overflow: hidden;
 }
 
 .carousel {
   display: flex;
-  justify-content: center; /* Centraliza o carousel horizontalmente */
-  align-items: center; /* Centraliza verticalmente se necessário */
+  justify-content: center; 
+  align-items: center; 
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto; /* Garante alinhamento central horizontal */
-  padding: 20px 0; /* Espaçamento acima e abaixo */
-  flex-grow: 1; /* Permite que o carousel ocupe o espaço restante */
+  max-width: 700px;
+  margin: 0 auto; 
+  padding: 20px 0; 
+  flex-grow: 1; 
 }
 
-
-.carousel img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
 
 footer {
   display: flex;
@@ -69,4 +71,5 @@ footer a {
   display: flex;
   flex-direction: column;
   flex-grow: 1; /* Permite que o conteúdo ocupe o espaço restante */
+  height: 100%;
 }

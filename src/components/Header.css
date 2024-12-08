@@ -5,8 +5,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semitransparente */
-  z-index: 1000; /* Garante que o modal fique acima do conteúdo */
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
 }
 
 /* Conteúdo do modal - centralizado na tela */
@@ -14,36 +14,41 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centraliza o modal */
+  transform: translate(-50%, -50%); 
   background-color: white;
   padding: 20px;
-  width: 300px; /* Largura do modal */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar o efeito de pop-up */
-  border-radius: 8px; /* Bordas arredondadas */
-  z-index: 1001; /* Garante que o conteúdo do modal fique acima da sobreposição */
-  font-size: 14px; /* Tamanho da fonte ajustado */
-  text-align: center; /* Alinhamento do texto */
+  width: 300px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px; 
+  z-index: 1001; 
+  font-size: 14px; 
+  text-align: center; 
 }
 
 /* Adicionalmente, podemos estilizar os inputs e o botão para ficarem mais bonitos */
 .RadixDialogContent input {
   margin: 10px 0;
   padding: 8px;
-  width: 100%;
+  width: 95%;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
+  max-width: 240px;
 }
 
 .RadixDialogContent button {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: #fae0e3;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  color: #555;
+
 }
 
 .RadixDialogContent button:hover {
-  background-color: #0056b3;
+  background-color: #f5b7c3;
+  color: #000;
+
 }
